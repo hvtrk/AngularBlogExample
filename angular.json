@@ -81,9 +81,12 @@
             "styles": [
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/font-awesomecss/font-awesome.min.css"
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "src/assets/simple-line-icons/css/simple-line-icons.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/bootstrapdistjs/bootstrap.min.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"

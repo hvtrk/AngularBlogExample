@@ -1,0 +1,22 @@
+footer.footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer.footer .social-link {
+  display: block;
+  height: 4.2rem;
+  width: 3.7rem;
+  line-height: 4rem;
+  font-size: 1.5rem;
+  background-color: #1D809F;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+footer.footer .social-link:hover {
+  background-color: #155d74;
+  text-decoration: none;
+}

@@ -1,0 +1,38 @@
+a{
+  text-decoration: none;
+}
+.service-icon {
+  background-color: #fff;
+  color: #1D809F;
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.service-icon:hover {
+  background-color: #dff9fb;
+  text-decoration: none;
+  filter: invert(100%);
+}
+
+.content-section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.content-section-heading h2 {
+  font-size: 4rem;
+  color:#dff9fb;
+}
+
+.content-section-heading h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.text-secondary {
+  color: #ecb807 !important;
+}
