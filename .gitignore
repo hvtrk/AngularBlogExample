@@ -8,7 +8,6 @@
 # dependencies
 /node_modules
 /api/node_modules
-/hevenTechBlog
 
 # IDEs and editors
 /.idea
