@@ -4,11 +4,18 @@
   "description": "Blog API",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "author": "Rahul",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^5.3.12"
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "mongoose": "^5.3.13",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.18.6"
   }
 }

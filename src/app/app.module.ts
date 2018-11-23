@@ -7,15 +7,19 @@ import { AboutModule } from './about/about.module';
 import { ServeModule } from './serve/serve.module';
 import { ContactModule } from './contact/contact.module';
 import { HomeComponent } from './home/home.component';
+import { PostsModule } from './posts/posts.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    HttpClientModule,
     AboutModule,
     ContactModule,
-    ServeModule
+    ServeModule,
+    PostsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

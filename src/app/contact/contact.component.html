@@ -5,12 +5,12 @@
       <form>
         <div class="form-group">
           <label for="inputEmail">Email address</label>
-          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" #email>
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
           <label for="inputName">Name</label>
-          <input type="text" class="form-control" id="inputName" placeholder="Enter Name">
+          <input type="text" class="form-control" id="inputName" placeholder="Enter Name" #name>
         </div>
         <div class="form-group">
           <label for="inputName">Message</label>
@@ -27,10 +27,11 @@
             style="
               resize: none;
               "
+              #message
             ></textarea>
         </div>
         <div class="text-center">
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" (click)="contactUs(email.value, name.value, message.value)">Submit</button>
         </div>
       </form>
     </div>

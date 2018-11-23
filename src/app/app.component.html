@@ -56,19 +56,11 @@
           >Contact</a
         >
       </li>
+      <li [class]="propDeactive">
+        <a class="nav-link" [routerLink]="['/posts']" routerLinkActive="router-link-active">Posts</a>
+      </li>
     </ul>
   </div>
-  <form class="form-inline">
-    <input
-      class="form-control mr-sm-2"
-      type="search"
-      placeholder="Search"
-      aria-label="Search"
-    />
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-      Search
-    </button>
-  </form>
 </nav>
 
 <!-- Router Navigation Section -->
@@ -87,16 +79,19 @@
         </a>
       </li>
       <li class="list-inline-item">
-        <a class="social-link rounded-circle text-white mr-3" href="#">
-          <img src="../assets/img/linkedin-in-brands.svg" alt="facebook" style="width:1.3em; filter: invert(100%);">
+        <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/dr-rahulk95">
+          <img src="../assets/img/linkedin-in-brands.svg" alt="linkedin" style="width:1.3em; filter: invert(100%);">
         </a>
       </li>
       <li class="list-inline-item">
-        <a class="social-link rounded-circle text-white" href="#">
-          <img src="../assets/img/github-brands.svg" alt="facebook" style="width:1.7em; filter: invert(100%);">
+        <a class="social-link rounded-circle text-white" href="https://github.com/dr-rahul">
+          <img src="../assets/img/github-brands.svg" alt="github" style="width:1.7em; filter: invert(100%);">
         </a>
       </li>
     </ul>
     <p class="text-muted small mb-0">Copyright &copy; MyBlog 2018</p>
   </div>
 </footer>
+
+
+

@@ -1,0 +1,31 @@
+<div class="container margin_card ">
+  <div class="card text-white bg-info mb-3 card border-info mb-4" >
+    <div class="card-header text-center" style="font-size: 2em;">Create Post</div>
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="inputEmail">Email address</label>
+          <input type="email" class="form-control" id="inputEmail" #inputEmail aria-describedby="emailHelp" placeholder="Enter email" value='' required >
+        </div>
+        <div class="form-group">
+          <label for="inputName">Name</label>
+          <input type="text" class="form-control" id="inputName" #inputName placeholder="Enter Name" value='' required >
+        </div>
+        <div class="form-group">
+          <label for="postHead">Post Title</label>
+          <input type="text" class="form-control" id="postHead" #postHead placeholder="Title" value='' required >
+        </div>
+        <div class="form-group">
+          <label for="postMessage">Post Message</label>
+          <textarea name="message" class="form-control" id="postMessage" #postMessage rows='15' maxlength="200000" wrap="soft" value=''
+            placeholder="Post Message" required style="
+              resize: none;
+              "></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-dark" (click)="savePost(inputEmail.value, inputName.value, postHead.value, postMessage.value)">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

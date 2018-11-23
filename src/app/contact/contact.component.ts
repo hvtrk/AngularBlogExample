@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactUsService } from './contact-us.service';
+import { routerNgProbeToken } from '@angular/router/src/router_module';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -8,9 +11,10 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
   propDeactive = 'nav-item';
   propActive = 'nav-item active';
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private cs: ContactUsService, private route: Router) {}
+  contactUs(email, name, message) {
+    this.cs.contact(email, name, message);
+    this.route.navigate(['']);
   }
-
+  ngOnInit() {}
 }
